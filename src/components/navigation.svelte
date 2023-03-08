@@ -8,7 +8,7 @@
 	];
 </script>
 
-<header class="flex h-16 w-full items-center justify-center">
+<header class="fixed z-10 flex h-16 w-full items-center justify-center">
 	<nav class="flex items-center justify-center">
 		<Tabs tabItems={navigationItems} />
 	</nav>
