@@ -2,13 +2,11 @@
 module.exports = {
 	content: ["./src/**/*.{html,js,svelte,ts}"],
 	theme: {
-		colors: {
-			amber: {
-				500: "#feb21e"
-			}
-		},
 		extend: {
 			colors: {
+				amber: {
+					500: "#feb21e"
+				},
 				primary: {
 					400: "#48232e",
 					500: "#301925",

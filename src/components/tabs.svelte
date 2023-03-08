@@ -9,6 +9,7 @@
 	let tabElements: HTMLDivElement[] = Array(tabItems.length).fill(null);
 	let tabIndicator: HTMLDivElement;
 
+	// TODO: smoother initial state
 	const setTabIndicatorPosition = () => {
 		if (!tabIndicator) return;
 		tabIndicator.style.transform = `translateX(${
