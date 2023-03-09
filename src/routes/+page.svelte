@@ -17,7 +17,7 @@
 			<p>
 				<span class="inline-block pb-2"
 					>I'm a front-end developer with an eye for good design and a heart for clean code moving
-					towards the goal of being a true fullstack.</span
+					towards the goal of becoming true fullstack.</span
 				>
 				<span class="inline-block pb-4"
 					>I'm based in Nuremberg and currently working remotely for

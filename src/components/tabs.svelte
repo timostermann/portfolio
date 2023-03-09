@@ -34,7 +34,7 @@
 					activeTabIndex = index;
 					setTabIndicatorPosition();
 				}}
-				class="text-2xl">{tab.label}</a
+				class="text-xl">{tab.label}</a
 			>
 		</div>
 	{/each}

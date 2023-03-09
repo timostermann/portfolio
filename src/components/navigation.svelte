@@ -9,7 +9,7 @@
 </script>
 
 <header
-	class="fixed z-10 flex h-16 w-full items-center justify-center bg-primary-500 bg-opacity-50 backdrop-blur-md"
+	class="fixed z-40 flex h-14 w-full items-center justify-center bg-primary-500 bg-opacity-50 backdrop-blur-md"
 >
 	<nav class="flex items-center justify-center">
 		<Tabs tabItems={navigationItems} />
