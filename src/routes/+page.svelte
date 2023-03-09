@@ -12,8 +12,9 @@
 	</picture>
 	<div class="absolute inset-0 z-[2] flex items-center justify-center">
 		<div class="flex w-full -translate-y-10 flex-col px-4 drop-shadow-md xs:w-[400px]">
-			<p class="font-extralight">Hi, I am</p>
-			<h1 class="mb-4 text-4xl font-semibold">Tim Ostermann</h1>
+			<h1 class="mb-4 text-4xl font-semibold">
+				<span class="font-extralight">Hi, ich bin </span>Tim!
+			</h1>
 			<p>
 				<span class="inline-block pb-2"
 					>I'm a front-end developer with an eye for good design and a heart for clean code moving
