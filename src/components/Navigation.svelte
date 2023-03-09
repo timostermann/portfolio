@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { NavItem } from "../types";
-	import Tabs from "./tabs.svelte";
+	import Tabs from "./Tabs.svelte";
 
 	const navigationItems: NavItem[] = [
 		{ route: "/", label: "About" },

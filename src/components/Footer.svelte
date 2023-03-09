@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { getCopyrightText } from "utils/copyrightText";
-	import Linkedin from "./svg/linkedin.svelte";
-	import Noise from "./svg/noise.svelte";
-	import Xing from "./svg/xing.svelte";
+	import Linkedin from "./svg/LinkedIn.svelte";
+	import Noise from "./svg/Noise.svelte";
+	import Xing from "./svg/Xing.svelte";
 </script>
 
 <footer class="relative mt-2 flex h-52 w-full items-end">
