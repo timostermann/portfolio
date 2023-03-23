@@ -2,6 +2,7 @@
 	import stage from "assets/stage.png";
 	import stageLg from "assets/stage-lg.png";
 	import stageXl from "assets/stage-xl.png"; // TODO: center xl image
+	import TagPill from "components/TagPill.svelte";
 </script>
 
 <div class="relative">
@@ -48,5 +49,8 @@
 				>.
 			</p>
 		</div>
+	</div>
+	<div>
+		<TagPill tag="TypeScript" />
 	</div>
 </div>
