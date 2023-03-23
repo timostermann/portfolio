@@ -27,7 +27,9 @@
 <div class="relative flex gap-4 xs:gap-10">
 	{#each tabItems as tab, index}
 		<div
-			class={cn("px-6", { "active class": index === activeTabIndex })}
+			class={cn("px-6 transition-colors hover:text-amber-100", {
+				active: index === activeTabIndex
+			})}
 			bind:this={tabElements[index]}
 		>
 			<a

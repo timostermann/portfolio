@@ -10,7 +10,8 @@ const config = {
 			components: "src/components",
 			assets: "src/assets",
 			routes: "src/routes",
-			utils: "src/utils"
+			utils: "src/utils",
+			data: "src/data"
 		}
 	}
 };

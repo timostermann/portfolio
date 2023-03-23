@@ -2,7 +2,8 @@
 	import stage from "assets/stage.png";
 	import stageLg from "assets/stage-lg.png";
 	import stageXl from "assets/stage-xl.png"; // TODO: center xl image
-	import TagPill from "components/TagPill.svelte";
+	import { cvItems } from "data/cvData";
+	import CvItem from "components/CvItem.svelte";
 </script>
 
 <div class="relative">
@@ -26,23 +27,20 @@
 				>
 				<span class="inline-block pb-4"
 					>I'm based in Nuremberg and currently working remotely for
-					<a
-						class="font-semibold text-amber-500 transition-colors hover:text-amber-600"
-						href="https://i22.de"
-						target="_blank"
-						rel="noreferrer">i22 Digitalagentur</a
+					<a class="text-link" href="https://i22.de" target="_blank" rel="noreferrer"
+						>i22 Digitalagentur</a
 					>.</span
 				>
 				If you want to get in contact, check out
 				<a
-					class="font-semibold text-amber-500 transition-colors hover:text-amber-600"
+					class="text-link"
 					href="https://www.xing.com/profile/Tim_Ostermann13/cv"
 					target="_blank"
 					rel="noreferrer">Xing</a
 				>
 				or
 				<a
-					class="font-semibold text-amber-500 transition-colors hover:text-amber-600"
+					class="text-link"
 					href="https://www.linkedin.com/in/tim-ostermann-b52a501a1/"
 					target="_blank"
 					rel="noreferrer">LinkedIn</a
@@ -50,7 +48,9 @@
 			</p>
 		</div>
 	</div>
-	<div>
-		<TagPill tag="TypeScript" />
-	</div>
+</div>
+<div>
+	{#each cvItems as cvItem, index}
+		<CvItem {cvItem} reverse={index % 2 === 1} />
+	{/each}
 </div>
