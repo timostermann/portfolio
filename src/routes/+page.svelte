@@ -11,9 +11,12 @@
 		<img src={stage} alt="Laptop on a desk" class="h-screen w-full object-cover " />
 	</picture>
 	<div class="absolute inset-0 z-[2] flex items-center justify-center">
-		<div class="flex w-full -translate-y-10 flex-col px-4 drop-shadow-md xs:w-[400px]">
+		<div
+			class="flex w-full -translate-y-10 flex-col rounded-md p-4 drop-shadow-md xs:w-[400px] sm:w-[464px] sm:p-8"
+			style="background: radial-gradient(circle, rgba(26,18,57,1) 0%, rgba(26,18,57,0) 80%)"
+		>
 			<h1 class="mb-4 text-4xl font-semibold">
-				<span class="font-extralight">Hi, ich bin </span>Tim!
+				<span class="font-extralight">Hi, I'm </span>Tim!
 			</h1>
 			<p>
 				<span class="inline-block pb-2"
