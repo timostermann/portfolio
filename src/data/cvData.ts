@@ -26,7 +26,7 @@ export const cvItems: CvItem[] = [
 		date: "12/2021 - present",
 		title: "Frontend Developer",
 		description:
-			"In my first full-time job, I work on various frontend projects for a variety of clients. I work in a small autonomous team with high standards for code quality, maintainability, performance and accessibility. We mainly work on projects with Headless CMS integrations and a focus on beautiful design. \n\n [i22 Digitalagentur GmbH](https://www.i22.de)",
+			"In my first full-time job, I work on various frontend projects for a variety of clients. I work in a small autonomous team with high standards for code stability, maintainability, performance and accessibility. We mainly work on projects with Headless CMS integrations and a focus on beautiful design. \n\n [i22 Digitalagentur GmbH](https://www.i22.de)",
 		technologies: [
 			"React",
 			"TypeScript",

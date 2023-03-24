@@ -2,11 +2,11 @@
 	import stage from "assets/stage.png";
 	import stageLg from "assets/stage-lg.png";
 	import stageXl from "assets/stage-xl.png"; // TODO: center xl image
+	import Cv from "components/Cv.svelte";
 	import { cvItems } from "data/cvData";
-	import CvItem from "components/CvItem.svelte";
 </script>
 
-<div class="relative">
+<section class="relative">
 	<picture>
 		<source srcset={stageXl} media="(min-width: 1500px)" />
 		<source srcset={stageLg} media="(min-width: 1100px)" />
@@ -48,9 +48,7 @@
 			</p>
 		</div>
 	</div>
-</div>
-<div>
-	{#each cvItems as cvItem, index}
-		<CvItem {cvItem} reverse={index % 2 === 1} />
-	{/each}
-</div>
+</section>
+<section class="pt-24">
+	<Cv {cvItems} />
+</section>
