@@ -18,6 +18,9 @@ module.exports = {
 			},
 			boxShadow: {
 				shine: "0 0 10px 0 rgb(0 0 0 / 0.5)"
+			},
+			backgroundImage: {
+				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))"
 			}
 		}
 	},
