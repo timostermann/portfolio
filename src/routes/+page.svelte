@@ -12,7 +12,7 @@
 		<source srcset={stageLg} media="(min-width: 1100px)" />
 		<img src={stage} alt="Laptop on a desk" class="h-screen w-full object-cover " />
 	</picture>
-	<div class="absolute inset-0 z-[2] flex items-center justify-center">
+	<div class="absolute inset-0 z-20 flex items-center justify-center">
 		<div
 			class="flex w-full -translate-y-10 flex-col rounded-md p-4 drop-shadow-md xs:w-[400px] sm:w-[464px] sm:p-8"
 			style="background: radial-gradient(circle, rgba(26,18,57,1) 0%, rgba(26,18,57,0) 80%)"

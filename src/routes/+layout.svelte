@@ -19,7 +19,7 @@
 	<slot />
 	<div
 		bind:this={spotlight}
-		class="absolute z-50 h-96 w-96 rounded-full bg-gradient-radial from-[rgb(255_251_235_/_0.2)] to-transparent opacity-5"
+		class="absolute z-10 h-96 w-96 rounded-full bg-gradient-radial from-[rgb(255_251_235_/_0.2)] to-transparent opacity-5"
 	/>
 </main>
 <Footer />
