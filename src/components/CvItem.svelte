@@ -19,7 +19,7 @@
 	<p class="markdown mt-1 flex flex-col gap-2">
 		<SvelteMarkdown source={cvItem.description} isInline />
 	</p>
-	<div class="mt-3 flex flex-wrap gap-2">
+	<div class={cn("mt-3 flex flex-wrap gap-2", { "justify-end": reverse })}>
 		{#each cvItem.technologies as tag}
 			<TagPill {tag} />
 		{/each}
