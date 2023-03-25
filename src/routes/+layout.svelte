@@ -15,7 +15,7 @@
 </script>
 
 <Navigation />
-<main class="relative">
+<main class="relative overflow-hidden">
 	<slot />
 	<div
 		bind:this={spotlight}
