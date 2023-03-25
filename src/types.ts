@@ -5,3 +5,11 @@ export type CvItem = {
 	description: string;
 	technologies: string[];
 };
+export type Project = {
+	date: string;
+	title: string;
+	description: string;
+	technologies: string[];
+	source: string;
+	link?: string;
+};
