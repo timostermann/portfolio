@@ -22,7 +22,7 @@
 				target="_blank"
 				rel="noreferrer"
 				title={project.title}
-				class="cursor-pointer">See for yourself</a
+				class="cursor-pointer">See result</a
 			>
 		{/if}
 	</p>
@@ -38,7 +38,7 @@
 				target="_blank"
 				rel="noreferrer"
 				title="GitHub"
-				class="h-8 w-8 cursor-pointer"><Github /></a
+				class="h-8 w-8 cursor-pointer transition-transform hover:scale-110"><Github /></a
 			>
 		</div>
 	</div>
