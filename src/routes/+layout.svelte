@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Footer from "components/Footer.svelte";
-	import Navigation from "components/Navigation.svelte";
+	import Footer from "components/organisms/Footer.svelte";
+	import Navigation from "components/organisms/Navigation.svelte";
 	import { onMount } from "svelte";
 	import "../app.css";
 

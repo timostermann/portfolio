@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { CvItem as CvItemType } from "../types";
-	import CvItem from "./CvItem.svelte";
-	import TimelineMarker from "./TimelineMarker.svelte";
+	import type { CvItem as CvItemType } from "../../types";
+	import CvItem from "../molecules/CvItem.svelte";
+	import TimelineMarker from "../atoms/TimelineMarker.svelte";
 
 	export let cvItems: CvItemType[];
 </script>

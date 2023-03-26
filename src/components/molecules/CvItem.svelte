@@ -1,8 +1,8 @@
 <script lang="ts">
 	import cn from "classnames";
-	import type { CvItem } from "../types";
+	import type { CvItem } from "../../types";
 	import SvelteMarkdown from "svelte-markdown";
-	import TagPill from "./TagPill.svelte";
+	import TagPill from "../atoms/TagPill.svelte";
 
 	export let cvItem: CvItem;
 	export let reverse: boolean;

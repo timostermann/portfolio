@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ProjectTile from "components/ProjectTile.svelte";
+	import ProjectTile from "components/molecules/ProjectTile.svelte";
 	import { projects } from "data/projectData";
 </script>
 

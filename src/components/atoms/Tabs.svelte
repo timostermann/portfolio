@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { NavItem } from "../types";
+	import type { NavItem } from "../../types";
 	import { onMount } from "svelte";
 	import cn from "classnames";
 	import { page } from "$app/stores";

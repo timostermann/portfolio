@@ -1,8 +1,8 @@
 <script lang="ts">
 	import SvelteMarkdown from "svelte-markdown";
-	import type { Project } from "../types";
-	import Github from "./svg/Github.svelte";
-	import TagPill from "./TagPill.svelte";
+	import type { Project } from "../../types";
+	import Github from "../svg/Github.svelte";
+	import TagPill from "../atoms/TagPill.svelte";
 
 	export let project: Project;
 </script>

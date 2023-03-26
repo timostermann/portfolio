@@ -2,7 +2,7 @@
 	import stage from "assets/stage.png";
 	import stageLg from "assets/stage-lg.png";
 	import stageXl from "assets/stage-xl.png"; // TODO: center xl image
-	import Cv from "components/Cv.svelte";
+	import Cv from "components/organisms/Cv.svelte";
 	import { cvItems } from "data/cvData";
 </script>
 
