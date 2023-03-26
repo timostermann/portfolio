@@ -52,6 +52,4 @@
 <section class="bg-gradient-to-b from-primary-900 to-primary-500 pt-24">
 	<Cv {cvItems} />
 </section>
-<section class="bg-gradient-to-b from-primary-500 to-primary-900 pt-24">
-	<h2>Techstack Layout Placeholder</h2>
-</section>
+<section class="bg-gradient-to-b from-primary-500 to-primary-900 pt-24" />
