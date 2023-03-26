@@ -14,9 +14,9 @@
 		reverse ? "items-end text-end" : "items-start"
 	)}
 >
-	<p class="text-sm">{cvItem.date}</p>
+	<p>{cvItem.date}</p>
 	<h2 class="text-xl font-medium">{cvItem.title}</h2>
-	<p class="markdown mt-1 flex flex-col gap-2">
+	<p class={cn("markdown mt-1 flex flex-col gap-2", { "items-end": reverse })}>
 		<SvelteMarkdown source={cvItem.description} isInline />
 	</p>
 	<div class={cn("mt-3 flex flex-wrap gap-2", { "justify-end": reverse })}>

@@ -19,6 +19,7 @@
 					href="https://www.xing.com/profile/Tim_Ostermann13/cv"
 					target="_blank"
 					rel="noreferrer"
+					title="Xing"
 					class="cursor-pointer"><Xing /></a
 				>
 			</li>
@@ -27,6 +28,7 @@
 					href="https://www.linkedin.com/in/tim-ostermann-b52a501a1/"
 					target="_blank"
 					rel="noreferrer"
+					title="LinkedIn"
 					class="cursor-pointer"><Linkedin /></a
 				>
 			</li>

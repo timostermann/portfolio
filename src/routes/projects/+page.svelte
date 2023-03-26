@@ -1,11 +1,12 @@
 <script lang="ts">
 	import ProjectTile from "components/ProjectTile.svelte";
+	import { projects } from "data/projectData";
 </script>
 
 <section
 	class="relative flex flex-col items-center bg-gradient-to-b from-primary-900 via-primary-500 to-primary-900 px-8 pt-24"
 >
-	<div class="w-[500px] max-w-full">
+	<div class="z-20 w-[500px] max-w-full">
 		<h1 class="mb-4 text-4xl font-extralight">Project Overview</h1>
 		<p>
 			<span class="inline-block pb-4"
@@ -20,7 +21,9 @@
 			and find out, that I have a lot of READMEs yet to write...
 		</p>
 	</div>
-	<div class="mt-12 flex w-[700px] max-w-full flex-col items-center gap-8">
-		<ProjectTile />
+	<div class="z-20 mt-12 flex w-[700px] max-w-full flex-col items-center gap-8">
+		{#each projects as project}
+			<ProjectTile {project} />
+		{/each}
 	</div>
 </section>
