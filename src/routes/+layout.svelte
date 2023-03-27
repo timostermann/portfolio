@@ -15,7 +15,7 @@
 </script>
 
 <Navigation />
-<main class="relative overflow-hidden">
+<main class="relative min-h-[calc(100vh-3.5rem-13rem)] overflow-hidden">
 	<slot />
 	<div
 		bind:this={spotlight}

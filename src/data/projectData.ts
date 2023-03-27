@@ -5,8 +5,8 @@ export const projects: Project[] = [
 		date: "2023",
 		title: "Personal Website",
 		description:
-			"After sitting on the idea and an unused domain for a while, I finally found the time and motivation to build this website. I used it as an opportunity to dive into some new technologies. I've used Svelte before, but this is the first time I used SvelteKit. I used Midjourney to create a Stage image and Figma to draft a design. I've used Tailwind for styling and ThreeJs for the background animation.",
-		technologies: ["Svelte", "SvelteKit", "Tailwind", "ThreeJs"],
+			"After sitting on the idea and an unused domain for a while, I finally found the time and motivation to build this website. I used it as an opportunity to dive into some new technologies. I've used Svelte before, but this is the first time I used SvelteKit. I used Midjourney to create a Stage image, Figma to draft a design and Tailwind for styling.",
+		technologies: ["Svelte", "SvelteKit", "Tailwind"],
 		source: "https://github.com/timostermann/portfolio"
 	},
 	{
