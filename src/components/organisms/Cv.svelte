@@ -6,7 +6,7 @@
 	export let cvItems: CvItemType[];
 </script>
 
-<div class="relative z-20 flex w-full items-center justify-center pr-4">
+<div class="relative z-20 flex w-full items-center justify-center px-4">
 	<div
 		class="relative grid grid-cols-[32px_1fr] justify-items-center gap-y-16 gap-x-4 sm:gap-x-6 xl:hidden"
 	>

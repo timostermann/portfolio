@@ -5,7 +5,7 @@ export const cvItems: CvItem[] = [
 		date: "10/2018 - 01/2022",
 		title: "Bachelor of Science in Media Informatics",
 		description:
-			"In my studies I learned the basics of computer science and programming. Because of the focus on media, I also learned about design and animation in 2D and 3D. \n\n [Westfälische Hochschule Gelsenkirchen](https://www.w-hs.de/medieninformatik-ge/)",
+			"In my studies at the University of Applied Science in Gelsenkirchen I learned the basics of computer science and programming. Because of the focus on media, I also learned about design and animation in 2D and 3D. \n\n [More about the study program](https://www.w-hs.de/medieninformatik-ge/)",
 		technologies: ["Java", "C", "SQL", "REST", "Git"]
 	},
 	{
