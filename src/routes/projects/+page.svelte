@@ -13,7 +13,7 @@
 <section
 	class="relative flex flex-col items-center bg-gradient-to-b from-primary-900 via-primary-500 to-primary-900 px-8 pt-24"
 >
-	<div class="z-20 w-[500px] max-w-full">
+	<div class="z-20 w-[700px] max-w-full sm:p-6">
 		<h1 class="mb-4 text-4xl font-extralight">Project Overview</h1>
 		<p>
 			<span class="inline-block pb-4"
