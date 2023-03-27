@@ -10,7 +10,7 @@
 	<picture>
 		<source srcset={stageXl} media="(min-width: 1500px)" />
 		<source srcset={stageLg} media="(min-width: 1100px)" />
-		<img src={stage} alt="Laptop on a desk" class="h-screen w-full object-cover " />
+		<img src={stage} alt="Laptop on a desk" class="h-screen max-h-[1600px] w-full object-cover " />
 	</picture>
 	<div class="absolute inset-0 z-20 flex items-center justify-center">
 		<div
