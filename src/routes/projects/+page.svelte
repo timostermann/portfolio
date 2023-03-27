@@ -3,6 +3,13 @@
 	import { projects } from "data/projectData";
 </script>
 
+<svelte:head>
+	<title>Projects | Tim Ostermann</title>
+	<meta name="description" content="Tim Ostermann's Projects" />
+	<meta property="og:title" content="Projects | Tim Ostermann" />
+	<meta property="og:description" content="Tim Ostermann's Projects" />
+	<meta property="og:url" content="https://timostermann.com/projects" />
+</svelte:head>
 <section
 	class="relative flex flex-col items-center bg-gradient-to-b from-primary-900 via-primary-500 to-primary-900 px-8 pt-24"
 >

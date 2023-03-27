@@ -1,11 +1,18 @@
 <script lang="ts">
-	import stage from "assets/stage.png";
-	import stageLg from "assets/stage-lg.png";
-	import stageXl from "assets/stage-xl.png"; // TODO: center xl image
+	import stage from "assets/stage.webp";
+	import stageLg from "assets/stage-lg.webp";
+	import stageXl from "assets/stage-xl.webp";
 	import Cv from "components/organisms/Cv.svelte";
 	import { cvItems } from "data/cvData";
 </script>
 
+<svelte:head>
+	<title>About | Tim Ostermann</title>
+	<meta name="description" content="About Tim Ostermann" />
+	<meta property="og:title" content="About | Tim Ostermann" />
+	<meta property="og:description" content="About Tim Ostermann" />
+	<meta property="og:url" content="https://timostermann.com/" />
+</svelte:head>
 <section class="relative">
 	<picture>
 		<source srcset={stageXl} media="(min-width: 1500px)" />
