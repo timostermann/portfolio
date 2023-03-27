@@ -5,7 +5,7 @@ export const projects: Project[] = [
 		date: "2023",
 		title: "Personal Website",
 		description:
-			"After sitting on the idea and an unused domain for a while, I finally found the time and motivation to build this website. I used it as an opportunity to dive into some new technologies. I've used Svelte before, but this is the first time I used SvelteKit. I used Midjourney to create a Stage image, Figma to draft a design and Tailwind for styling.",
+			"After sitting on the idea and an unused domain for a while, I finally found the time and motivation to build this website. I used it as an opportunity to dive into some new technologies. I've used Svelte before, but this is the first time I used SvelteKit. I used Midjourney to create a stage image, Figma to draft a design and Tailwind for styling.",
 		technologies: ["Svelte", "SvelteKit", "Tailwind"],
 		source: "https://github.com/timostermann/portfolio"
 	},
@@ -30,7 +30,7 @@ export const projects: Project[] = [
 		date: "2020",
 		title: "Huffman Compression",
 		description:
-			"To also present a less visual project, I decided to add a project that I did in university. It's a implementation of the Huffman compression algorithm in C. It was a great project to learn more about low-level programming and how to do a CLI application.",
+			"To also present a less visual project, I decided to add a project that I did in university. It's an implementation of the Huffman compression algorithm in C. It was a great project to learn more about low-level programming and how to do a CLI application.",
 		technologies: ["C"],
 		source: "https://github.com/timostermann/huffman"
 	}
