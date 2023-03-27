@@ -3,13 +3,15 @@
 	import type { CvItem } from "../../types";
 	import SvelteMarkdown from "svelte-markdown";
 	import TagPill from "../atoms/TagPill.svelte";
+	import AnimateIn from "components/atoms/AnimateIn.svelte";
 
 	export let cvItem: CvItem;
 	export let reverse: boolean;
 </script>
 
-<div
-	class={cn(
+<AnimateIn
+	tag="div"
+	className={cn(
 		"flex max-w-md flex-col gap-1 text-base font-thin",
 		reverse ? "items-end text-end" : "items-start"
 	)}
@@ -24,4 +26,4 @@
 			<TagPill {tag} />
 		{/each}
 	</div>
-</div>
+</AnimateIn>

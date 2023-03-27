@@ -1,4 +1,5 @@
 <script lang="ts">
+	import AnimateIn from "components/atoms/AnimateIn.svelte";
 	import ProjectTile from "components/molecules/ProjectTile.svelte";
 	import { projects } from "data/projectData";
 </script>
@@ -14,8 +15,10 @@
 	class="relative flex flex-col items-center bg-gradient-to-b from-primary-900 via-primary-500 to-primary-900 px-8 pt-24"
 >
 	<div class="z-20 w-[700px] max-w-full sm:p-6">
-		<h1 class="mb-4 text-4xl font-extralight">Project Overview</h1>
-		<p>
+		<AnimateIn tag="h1" className="mb-4 text-4xl font-extralight" margin={0}
+			>Project Overview</AnimateIn
+		>
+		<AnimateIn tag="p" margin={0}>
 			<span class="inline-block pb-4"
 				>Here I want to give a short overview about my (private) projects.</span
 			>
@@ -26,7 +29,7 @@
 			I hope the list still gives you a good overview of my skills (and why I'd rather work with a talented
 			designer than rely on my own design skills). You can also check out the source code on my GitHub
 			and find out, that I have a lot of READMEs yet to write...
-		</p>
+		</AnimateIn>
 	</div>
 	<div class="z-20 mt-12 flex w-[700px] max-w-full flex-col items-center gap-8">
 		{#each projects as project}

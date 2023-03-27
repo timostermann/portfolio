@@ -3,6 +3,7 @@
 	import stageLg from "assets/stage-lg.webp";
 	import stageXl from "assets/stage-xl.webp";
 	import Cv from "components/organisms/Cv.svelte";
+	import AnimateIn from "components/atoms/AnimateIn.svelte";
 	import { cvItems } from "data/cvData";
 </script>
 
@@ -24,10 +25,10 @@
 			class="flex w-full -translate-y-10 flex-col rounded-md p-4 drop-shadow-md xs:w-[400px] sm:w-[464px] sm:p-8"
 			style="background: radial-gradient(circle, rgba(26,18,57,1) 0%, rgba(26,18,57,0) 80%)"
 		>
-			<h1 class="mb-4 text-4xl font-semibold">
+			<AnimateIn tag="h1" className="mb-4 text-4xl font-semibold" margin={0}>
 				<span class="font-extralight">Hi, I'm </span>Tim!
-			</h1>
-			<p>
+			</AnimateIn>
+			<AnimateIn tag="p" margin={0}>
 				<span class="inline-block pb-2"
 					>I'm a front-end developer with an eye for good design and a heart for clean code moving
 					towards the goal of becoming true fullstack.</span
@@ -52,7 +53,7 @@
 					target="_blank"
 					rel="noreferrer">LinkedIn</a
 				>.
-			</p>
+			</AnimateIn>
 		</div>
 	</div>
 </section>
