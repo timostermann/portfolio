@@ -35,6 +35,7 @@
 					style={`width: ${technology.experience}%`}
 					inViewClass="scale-x-100"
 					outOfViewClass="scale-x-0"
+					margin={-50}
 				/>
 			{/each}
 		</div>
