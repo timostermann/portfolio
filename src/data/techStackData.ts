@@ -32,10 +32,6 @@ const languages: Technology[] = [
 	{
 		name: "Kotlin",
 		experience: 5
-	},
-	{
-		name: "Rust",
-		experience: 5
 	}
 ];
 
@@ -86,7 +82,7 @@ export const frameworks: Technology[] = [
 	},
 	{
 		name: "Nest.js",
-		experience: 20
+		experience: 10
 	}
 ];
 
