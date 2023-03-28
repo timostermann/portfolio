@@ -3,6 +3,9 @@
 	import { onMount } from "svelte";
 
 	export let className = "";
+	export let inViewClass = "translate-y-0 opacity-100";
+	export let outOfViewClass = "translate-y-24 opacity-0";
+	export let setupClass = "transition-[opacity,transform] duration-1000";
 	export let tag = "div";
 	export let margin = -200;
 	export let once = true;
@@ -53,11 +56,7 @@
 <svelte:element
 	this={tag}
 	bind:this={container}
-	class={cn(
-		className,
-		"transition-[opacity,transform] duration-1000",
-		intersecting ? "translate-y-0 opacity-100" : "translate-y-24 opacity-0"
-	)}
+	class={cn(className, setupClass, intersecting ? inViewClass : outOfViewClass)}
 >
 	<slot />
 </svelte:element>

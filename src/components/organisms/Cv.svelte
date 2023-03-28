@@ -2,6 +2,7 @@
 	import type { CvItem as CvItemType } from "../../types";
 	import CvItem from "../molecules/CvItem.svelte";
 	import TimelineMarker from "../atoms/TimelineMarker.svelte";
+	import AnimateIn from "components/atoms/AnimateIn.svelte";
 
 	export let cvItems: CvItemType[];
 </script>
@@ -14,8 +15,11 @@
 			<TimelineMarker size={index === 0 ? "large" : "small"} />
 			<CvItem {cvItem} reverse={false} />
 		{/each}
-		<div
-			class="absolute left-[14px] h-[105%] w-1 rounded-xl bg-gradient-to-b from-amber-500 via-amber-500"
+		<AnimateIn
+			className="absolute left-[14px] origin-top h-[105%] w-1 rounded-xl bg-gradient-to-b from-amber-500 via-amber-500"
+			inViewClass="scale-y-100"
+			outOfViewClass="scale-y-0"
+			setupClass="transition-transform duration-[3s] ease-in"
 		/>
 	</div>
 	<div class="relative hidden grid-cols-[1fr_32px_1fr] justify-items-center gap-x-6 xl:grid">
@@ -30,8 +34,11 @@
 				<div />
 			{/if}
 		{/each}
-		<div
-			class="absolute left-0 right-0 mx-auto h-[105%] w-1 rounded-xl bg-gradient-to-b from-amber-500 via-amber-500"
+		<AnimateIn
+			className="absolute left-0 right-0 origin-top mx-auto h-[105%] w-1 rounded-xl bg-gradient-to-b from-amber-500 via-amber-500"
+			inViewClass="scale-y-100"
+			outOfViewClass="scale-y-0"
+			setupClass="transition-transform duration-[3s] ease-in"
 		/>
 	</div>
 </div>
