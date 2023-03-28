@@ -9,6 +9,7 @@
 	export let tag = "div";
 	export let margin = -200;
 	export let once = true;
+	export let style = "";
 
 	let intersecting = false;
 	let container: HTMLElement;
@@ -57,6 +58,7 @@
 	this={tag}
 	bind:this={container}
 	class={cn(className, setupClass, intersecting ? inViewClass : outOfViewClass)}
+	{style}
 >
 	<slot />
 </svelte:element>

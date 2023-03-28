@@ -5,6 +5,7 @@
 	import Cv from "components/organisms/Cv.svelte";
 	import AnimateIn from "components/atoms/AnimateIn.svelte";
 	import { cvItems } from "data/cvData";
+	import TechStack from "components/organisms/TechStack.svelte";
 </script>
 
 <svelte:head>
@@ -60,4 +61,6 @@
 <section class="bg-gradient-to-b from-primary-900 to-primary-500 pt-24">
 	<Cv {cvItems} />
 </section>
-<section class="bg-gradient-to-b from-primary-500 to-primary-900 pt-24" />
+<section class="flex justify-center bg-gradient-to-b from-primary-500 to-primary-900 pt-24">
+	<TechStack />
+</section>

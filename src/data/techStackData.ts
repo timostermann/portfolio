@@ -49,7 +49,7 @@ export const frameworks: Technology[] = [
 		experience: 100
 	},
 	{
-		name: "Tailwind CSS",
+		name: "Tailwind",
 		experience: 100
 	},
 	{
