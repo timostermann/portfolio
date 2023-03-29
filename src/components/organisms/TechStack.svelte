@@ -12,9 +12,9 @@
 				>To give a better overview of my experience with different technologies, I want to list the
 				languages I've used and the most important frameworks and libraries I've worked with. The
 				bars should quantify the list items by how much experience I have with each technology.</span
-			>Since it's difficult to measure one's knowledge of a technology against the available
-			knowledge of that technology, I've decided to use a scale relative to my best-known technology
-			in each category, which is listed first.
+			><span class="font-medium">Note: </span>Since it's difficult to measure one's knowledge of a
+			technology against the available knowledge of that technology, I've decided to use a scale
+			relative to my best-known technology in each category, which is listed first.
 		</p>
 	</AnimateIn>
 	{#each techStackData as section}
