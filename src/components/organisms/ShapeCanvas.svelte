@@ -50,7 +50,9 @@
 		const columns = width / columnSize;
 		ctx.clearRect(0, 0, width, height);
 		for (let i = 0; i < rows; i++) {
+			const rowsFactor = i > 3 && i <= rows - 10 ? 1 : 0.5;
 			for (let j = 0; j < columns; j++) {
+				const columnFactor = j > 5 && j <= columns - 5 ? 1 : 0.5;
 				const noiseValue = noise(j + offset, i + offset / 2);
 				drawPolygon(
 					j * columnSize,
@@ -59,7 +61,7 @@
 					5,
 					0,
 					"transparent",
-					`rgba(60, 30, 45, ${(noiseValue + 1) * 0.5})`,
+					`rgba(60, 30, 45, ${(noiseValue + 1) * 0.5 * rowsFactor * columnFactor})`,
 					360 / i
 				);
 			}
