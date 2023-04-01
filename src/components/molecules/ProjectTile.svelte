@@ -10,7 +10,7 @@
 
 <AnimateIn
 	tag="article"
-	className="flex w-full flex-col gap-4 rounded-xl bg-gradient-to-br from-[rgb(254_178_30_/_0.2)] to-[rgb(254_178_30_/_0.4)] p-4 text-base font-thin shadow-[0_4px_30px_rgb(0_0_0_/_0.1)] backdrop-blur-md sm:p-6"
+	className="flex w-full flex-col gap-4 rounded-xl bg-gradient-to-br from-[rgb(254_178_30_/_0.15)] to-[rgb(254_178_30_/_0.25)] p-4 text-base font-thin shadow-[0_4px_30px_rgb(0_0_0_/_0.1)] backdrop-blur-[2px] sm:p-6"
 >
 	<div class="flex w-full flex-col justify-between gap-2 sm:flex-row sm:items-center">
 		<h2 class="text-xl font-medium">{project.title}</h2>

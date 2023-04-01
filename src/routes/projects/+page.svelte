@@ -1,6 +1,7 @@
 <script lang="ts">
 	import AnimateIn from "components/atoms/AnimateIn.svelte";
 	import ProjectTile from "components/molecules/ProjectTile.svelte";
+	import ShapeCanvas from "components/organisms/ShapeCanvas.svelte";
 	import { projects } from "data/projectData";
 </script>
 
@@ -14,6 +15,9 @@
 <section
 	class="relative flex flex-col items-center bg-gradient-to-b from-primary-900 via-primary-500 to-primary-900 px-8 pt-24"
 >
+	<div class="absolute inset-0 z-[5]">
+		<ShapeCanvas />
+	</div>
 	<div class="z-20 w-[700px] max-w-full sm:p-6">
 		<AnimateIn tag="h1" className="mb-4 text-4xl font-extralight" margin={0}
 			>Project Overview</AnimateIn
