@@ -79,8 +79,8 @@
 		resize();
 		interval = setInterval(() => {
 			draw(ctx);
-			offset += 0.05;
-		}, 50);
+			offset += 0.07;
+		}, 100);
 	});
 
 	onDestroy(() => {
