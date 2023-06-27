@@ -27,11 +27,7 @@ const languages: Technology[] = [
 	},
 	{
 		name: "Dart",
-		experience: 25
-	},
-	{
-		name: "Kotlin",
-		experience: 5
+		experience: 15
 	}
 ];
 
@@ -57,11 +53,11 @@ export const frameworks: Technology[] = [
 		experience: 85
 	},
 	{
-		name: "Svelte",
-		experience: 80
+		name: "Vue",
+		experience: 85
 	},
 	{
-		name: "Vue",
+		name: "Svelte",
 		experience: 80
 	},
 	{
