@@ -13,7 +13,7 @@ export const projects: Project[] = [
 		date: "2022",
 		title: "ViCat Meme Coin Website",
 		description:
-			"ViCat is a meme coin project that two friends and I are working on. While I have no experience (or knowledge, honestly) with crypto, I've had fun making websites for it. I did an MVP site and some smaller event sites for it with React in 2021, but after a redesign and a new logo, I decided to rebuild the site with Svelte and SCSS. It's been a cool playground and really made me appreciate the simplicity of Svelte.",
+			"ViCat is a meme coin project that two friends and I were working on. While I have no experience (or knowledge, honestly) with crypto, I've had fun making websites for it. I did an MVP site and some smaller event sites for it with React in 2021, but after a redesign and a new logo, I decided to rebuild the site with Svelte and SCSS. It's been a cool playground and really made me appreciate the simplicity of Svelte.",
 		technologies: ["Svelte", "SCSS"],
 		source: "https://github.com/timostermann/vicat-v2",
 		link: "https://vicat.tech"
