@@ -17,10 +17,12 @@
 </svelte:head>
 <section class="relative">
 	<picture class="relative">
-		<p class="absolute bottom-2 right-2 text-[10px] opacity-20">Created with Midjourney</p>
+		<p aria-hidden class="absolute bottom-2 right-2 text-[10px] opacity-20">
+			Created with Midjourney
+		</p>
 		<source srcset={stageXl} media="(min-width: 1500px)" />
 		<source srcset={stageLg} media="(min-width: 1100px)" />
-		<img src={stage} alt="Laptop on a desk" class="h-screen max-h-[1600px] w-full object-cover " />
+		<img src={stage} alt="" class="h-screen max-h-[1600px] w-full object-cover " />
 	</picture>
 	<div class="absolute inset-0 z-20 flex items-center justify-center">
 		<div
