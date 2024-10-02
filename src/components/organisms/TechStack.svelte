@@ -25,19 +25,21 @@
 			inViewClass="translate-y-0 opacity-100">{section.category}</AnimateIn
 		>
 		<div class="ml-[108px] mb-2 h-px w-[calc(100%-108px)] bg-amber-200" />
-		<div
-			class="mb-16 grid grid-cols-[100px_1fr] items-center justify-items-end gap-x-2 gap-y-5 last:mb-0"
-		>
+		<ul class="mb-16 last:mb-0">
 			{#each section.technologies as technology}
-				<TagPill tag={technology.name} />
-				<AnimateIn
-					className="relative h-4 origin-left justify-self-start rounded-[0_50px_50px_0] bg-gradient-to-r from-violet-500 to-amber-500 pr-6"
-					style={`width: ${technology.experience}%`}
-					inViewClass="scale-x-100"
-					outOfViewClass="scale-x-0"
-					margin={-50}
-				/>
+				<li class="mb-5 grid grid-cols-[100px_1fr] items-center justify-items-end gap-x-2">
+					<TagPill tag={technology.name} />
+					<AnimateIn
+						className="relative h-4 origin-left justify-self-start rounded-[0_50px_50px_0] bg-gradient-to-r from-violet-500 to-amber-500 pr-6"
+						style={`width: ${technology.experience}%`}
+						inViewClass="scale-x-100"
+						outOfViewClass="scale-x-0"
+						margin={-50}
+					>
+						<span class="sr-only">Relative experience: {technology.experience}%</span>
+					</AnimateIn>
+				</li>
 			{/each}
-		</div>
+		</ul>
 	{/each}
 </div>
