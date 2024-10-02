@@ -15,7 +15,8 @@
 </script>
 
 <Navigation />
-<main class="relative min-h-[calc(100vh-3.5rem-13rem)] overflow-hidden">
+<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+<main class="relative min-h-[calc(100vh-3.5rem-13rem)] overflow-hidden" id="main" tabindex={-1}>
 	<slot />
 	<div
 		bind:this={spotlight}
