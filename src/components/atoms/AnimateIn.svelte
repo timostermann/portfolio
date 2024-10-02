@@ -9,7 +9,9 @@
 	export let tag = "div";
 	export let margin = -200;
 	export let once = true;
-	export let style = "";
+	export let style: string | undefined = undefined;
+	export let id: string | undefined = undefined;
+	export let ariaLabelledby: string | undefined = undefined;
 
 	let intersecting = false;
 	let initiallyAbove = false;
@@ -49,6 +51,8 @@
 	bind:this={container}
 	class={cn(className, setupClass, intersecting ? inViewClass : outOfViewClass)}
 	{style}
+	{id}
+	aria-labelledby={ariaLabelledby}
 >
 	<slot />
 </svelte:element>

@@ -17,12 +17,12 @@
 </svelte:head>
 <section class="relative">
 	<picture class="relative">
-		<p aria-hidden class="absolute bottom-2 right-2 text-[10px] opacity-20">
+		<span aria-hidden={true} class="absolute bottom-2 right-2 text-[10px] opacity-20">
 			Created with Midjourney
-		</p>
+		</span>
 		<source srcset={stageXl} media="(min-width: 1500px)" />
 		<source srcset={stageLg} media="(min-width: 1100px)" />
-		<img src={stage} alt="" class="h-screen max-h-[1600px] w-full object-cover " />
+		<img src={stage} alt="" class="h-screen max-h-[1600px] w-full object-cover" />
 	</picture>
 	<div class="absolute inset-0 z-20 flex items-center justify-center">
 		<div
@@ -33,30 +33,34 @@
 				<span class="font-extralight">Hi, I'm </span>Tim!
 			</AnimateIn>
 			<AnimateIn tag="p" margin={0}>
-				<span class="inline-block pb-2"
-					>I'm a front-end developer with an eye for good design and a heart for clean code moving
-					towards the goal of becoming true fullstack.</span
-				>
+				<span class="inline-block pb-2">
+					I'm a front-end developer with an eye for good design and a heart for clean code moving
+					towards the goal of becoming true fullstack.
+				</span>
 				<span class="inline-block pb-4"
 					>I'm based in Nuremberg and currently working remotely for
-					<a class="text-link" href="https://i22.de" target="_blank" rel="noreferrer"
-						>i22 Digitalagentur</a
-					>.</span
-				>
+					<a class="text-link" href="https://i22.de" target="_blank" rel="noreferrer">
+						i22 Digitalagentur
+					</a>.
+				</span>
 				If you want to get in contact, check out
 				<a
 					class="text-link"
 					href="https://www.xing.com/profile/Tim_Ostermann13/cv"
 					target="_blank"
-					rel="noreferrer">Xing</a
+					rel="noreferrer"
 				>
+					Xing
+				</a>
 				or
 				<a
 					class="text-link"
 					href="https://www.linkedin.com/in/tim-ostermann-b52a501a1/"
 					target="_blank"
-					rel="noreferrer">LinkedIn</a
-				>.
+					rel="noreferrer"
+				>
+					LinkedIn
+				</a>.
 			</AnimateIn>
 		</div>
 	</div>

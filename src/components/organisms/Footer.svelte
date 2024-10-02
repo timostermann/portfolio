@@ -15,10 +15,11 @@
 						href={link.href}
 						target="_blank"
 						rel="noreferrer"
-						title={link.title}
 						class="block h-6 w-6 cursor-pointer transition-transform hover:scale-110 sm:h-8 sm:w-8"
-						><svelte:component this={link.icon} /></a
 					>
+						<svelte:component this={link.icon} />
+						<span class="sr-only">{link.title}</span>
+					</a>
 				</li>
 			{/each}
 		</ul>

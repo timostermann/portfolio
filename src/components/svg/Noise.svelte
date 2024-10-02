@@ -5,6 +5,7 @@
 	xmlns:svgjs="http://svgjs.dev/svgjs"
 	opacity="1"
 	class="h-full w-full"
+	aria-hidden={true}
 	><defs
 		><filter
 			id="nnnoise-filter"

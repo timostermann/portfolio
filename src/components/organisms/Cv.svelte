@@ -13,7 +13,7 @@
 	>
 		{#each cvItems as cvItem, index}
 			<TimelineMarker size={index === 0 ? "large" : "small"} />
-			<CvItem {cvItem} reverse={false} />
+			<CvItem {cvItem} reverse={false} idPrefix="mobile" />
 		{/each}
 		<AnimateIn
 			className="absolute left-[14px] origin-top h-[105%] w-1 rounded-xl bg-gradient-to-b from-amber-500 via-amber-500"
@@ -27,9 +27,9 @@
 			{#if index % 2 === 0}
 				<div />
 				<TimelineMarker size={index === 0 ? "large" : "small"} />
-				<CvItem {cvItem} reverse={false} />
+				<CvItem {cvItem} reverse={false} idPrefix="desktop" />
 			{:else}
-				<CvItem {cvItem} reverse={true} />
+				<CvItem {cvItem} reverse={true} idPrefix="desktop" />
 				<TimelineMarker size="small" />
 				<div />
 			{/if}

@@ -4,26 +4,31 @@
 	import SvelteMarkdown from "svelte-markdown";
 	import TagPill from "../atoms/TagPill.svelte";
 	import AnimateIn from "components/atoms/AnimateIn.svelte";
+	import { sanitizeString } from "utils/sanitizeString";
 
 	export let cvItem: CvItem;
 	export let reverse: boolean;
+	export let idPrefix = "";
+
+	const id = sanitizeString(`cv-item-${idPrefix}-${cvItem.title}-${cvItem.date}`);
 </script>
 
 <AnimateIn
-	tag="div"
+	tag="article"
+	ariaLabelledby={id}
 	className={cn(
 		"flex max-w-md flex-col gap-1 text-base font-thin",
 		reverse ? "items-end text-end" : "items-start"
 	)}
 >
-	<p>{cvItem.date}</p>
-	<h2 class="text-xl font-medium">{cvItem.title}</h2>
+	<h2 class="text-xl font-medium" {id}>{cvItem.title}</h2>
+	<p class="-order-1">{cvItem.date}</p>
 	<p class={cn("markdown mt-1 flex flex-col gap-2", { "items-end": reverse })}>
 		<SvelteMarkdown source={cvItem.description} isInline />
 	</p>
-	<div class={cn("mt-3 flex flex-wrap gap-2", { "justify-end": reverse })}>
+	<ul class={cn("mt-3 flex flex-wrap gap-2", { "justify-end": reverse })}>
 		{#each cvItem.technologies as tag}
-			<TagPill {tag} />
+			<li><TagPill {tag} /></li>
 		{/each}
-	</div>
+	</ul>
 </AnimateIn>
