@@ -45,7 +45,7 @@ export const frameworks: Technology[] = [
 		experience: 100
 	},
 	{
-		name: "Jest",
+		name: "Jest/Vitest",
 		experience: 90
 	},
 	{
@@ -65,20 +65,20 @@ export const frameworks: Technology[] = [
 		experience: 75
 	},
 	{
+		name: "Nest.js",
+		experience: 65
+	},
+	{
 		name: "SvelteKit",
 		experience: 60
 	},
 	{
-		name: "Cypress",
+		name: "Cypress/Playwright",
 		experience: 40
 	},
 	{
 		name: "Flutter",
 		experience: 25
-	},
-	{
-		name: "Nest.js",
-		experience: 10
 	}
 ];
 

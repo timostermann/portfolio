@@ -24,18 +24,18 @@ export const cvItems: CvItem[] = [
 	},
 	{
 		date: "12/2021 - present",
-		title: "Frontend Developer",
+		title: "(Senior) Frontend Developer",
 		description:
-			"In my first full-time job, I work on various frontend projects for a variety of clients. I work in a small autonomous team with high standards for code stability, maintainability, performance and accessibility. We mainly work on projects with headless CMS integrations and a focus on beautiful design. \n\n [i22 Digitalagentur GmbH](https://www.i22.de)",
+			"In my first full-time job, I work on various frontend-heavy projects for a variety of clients. I work in a small autonomous team with high standards for code stability, maintainability, performance and accessibility. We mainly work on projects with headless CMS integrations and a focus on beautiful design. I've had different job titles over the years, currently it's Senior Frontend Developer. \n\n [i22 Digitalagentur GmbH](https://www.i22.de)",
 		technologies: [
 			"React",
 			"TypeScript",
 			"Next.js",
+			"Nest.js",
 			"Jest",
 			"Tailwind",
 			"Headless CMS",
-			"GraphQL",
-			"gsap"
+			"GraphQL"
 		]
 	}
 ];

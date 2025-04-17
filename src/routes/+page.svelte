@@ -34,11 +34,10 @@
 			</AnimateIn>
 			<AnimateIn tag="p" margin={0}>
 				<span class="inline-block pb-2">
-					I'm a front-end developer with an eye for good design and a heart for clean code moving
-					towards the goal of becoming true fullstack.
+					I'm a fullstack web developer with an eye for good design and a heart for clean code.
 				</span>
 				<span class="inline-block pb-4"
-					>I'm based in Nuremberg and currently working remotely for
+					>I'm based in Bonn and currently working for
 					<a class="text-link" href="https://i22.de" target="_blank" rel="noreferrer">
 						i22 Digitalagentur
 					</a>.
