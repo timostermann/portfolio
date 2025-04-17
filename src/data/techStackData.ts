@@ -61,11 +61,11 @@ export const frameworks: Technology[] = [
 		experience: 80
 	},
 	{
-		name: "Nuxt.js",
+		name: "Nuxt",
 		experience: 75
 	},
 	{
-		name: "Nest.js",
+		name: "NestJS",
 		experience: 65
 	},
 	{
