@@ -58,8 +58,19 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
-            cd ~/server-config/apps
-            docker compose --profile build run --rm portfolio-builder
-            cd ~/server-config/caddy
-            docker compose exec caddy caddy reload --config /etc/caddy/Caddyfile
+            # Pull the new image
+            docker pull ghcr.io/timostermann/portfolio:latest
+            
+            # Create output directory if it doesn't exist
+            mkdir -p /mnt/app-data/apps/portfolio
+            
+            # Extract static files from the image to the host
+            docker run --rm -v /mnt/app-data/apps/portfolio:/output ghcr.io/timostermann/portfolio:latest sh -c "cp -r /srv/* /output/"
+            
+            # Reload Caddy to pick up new files (if Caddy is running)
+            if docker ps --format '{{.Names}}' | grep -q '^caddy$'; then
+              docker exec caddy caddy reload --config /etc/caddy/Caddyfile
+            else
+              echo "Caddy container not found or not running. Static files updated but Caddy not reloaded."
+            fi
 
