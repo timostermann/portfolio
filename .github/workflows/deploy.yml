@@ -69,8 +69,10 @@ jobs:
             
             # Reload Caddy to pick up new files (if Caddy is running)
             if docker ps --format '{{.Names}}' | grep -q '^caddy$'; then
-              docker exec caddy caddy reload --config /etc/caddy/Caddyfile
+              echo "Reloading Caddy configuration..."
+              docker exec caddy caddy reload --config /etc/caddy/Caddyfile 2>&1 || echo "Warning: Caddy reload failed, but files are updated"
             else
               echo "Caddy container not found or not running. Static files updated but Caddy not reloaded."
+              echo "Deploy Caddy first: cd ~/server-config/caddy && docker compose up -d"
             fi
 
