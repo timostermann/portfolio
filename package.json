@@ -41,6 +41,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sentry/sveltekit": "^10.51.0",
 		"classnames": "^2.3.2",
 		"latinize": "^2.0.0",
 		"simplex-noise": "^4.0.1",
